@@ -20,7 +20,7 @@ public class MasterController {
     private MasterService masterService;
 
     @PostMapping
-    public ResponseEntity<MasterListResponse> saveMasterList(@RequestBody MasterApiRequest request) {
+    public ResponseEntity<MasterListResponse> fetchMasterList(@RequestBody MasterApiRequest request) {
         MasterListResponse savedEntities = masterService.processAndSaveMasterList(request);
         return ResponseEntity.ok(savedEntities);
     }

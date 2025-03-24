@@ -26,6 +26,23 @@ public class MasterEntity {
     private String benchmark;
     private Integer faceValue;
 
+    public MasterEntity() {
+    }
+
+    public MasterEntity(long id, String parentCode, String parentName, String name, PlanType planType, OptionType option, OptionFrequency optionFrequency, String subCategory, Sector sector, String benchmark, int faceValue) {
+        this.id = id;
+        this.parentCode = parentCode;
+        this.parentName = parentName;
+        this.name = name;
+        this.plan = planType;
+        this.option = option;
+        this.optionFrequency = optionFrequency;
+        this.subCategory = subCategory;
+        this.sector = sector;
+        this.benchmark = benchmark;
+        this.faceValue = faceValue;
+    }
+
     public Long getId() {
         return id;
     }
